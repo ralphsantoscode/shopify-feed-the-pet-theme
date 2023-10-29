@@ -1,0 +1,60 @@
+.ftp-hero-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.ftp-hero-content {
+  flex: 1;
+  padding: 16px;
+}
+
+.ftp-hero-content h1 {
+  font-size: 7rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.ftp-hero-actions .button-primary {
+  font-weight: bold;
+  width: 100%;
+  padding: 16px;
+  font-size: 1.8rem;
+}
+
+.ftp-hero-actions .button-primary:after {
+  --border-opacity: var(--buttons-border-opacity);
+}
+
+.ftp-hero-banner {
+  flex: 0.8;
+  margin: 16px;
+}
+
+.ftp-hero-banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--media-radius);
+  border: 3px solid #ffff;
+}
+
+@media screen and (max-width: 990px) {
+  .ftp-hero-container {
+    flex-direction: column;
+  }
+
+  .ftp-hero-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ftp-hero-banner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ftp-hero-content h1 {
+    font-size: 4rem;
+  }
+}
