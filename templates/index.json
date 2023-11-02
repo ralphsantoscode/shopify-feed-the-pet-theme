@@ -1,17 +1,5 @@
 {
   "sections": {
-    "02467c08-19b5-4ef2-98e5-612963ead7c4": {
-      "type": "custom-liquid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "custom_liquid": "{{ 'ftp-hero.css' | asset_url | stylesheet_tag }}\n\n<div class=\"ftp-hero-container page-width\">\n  <div class=\"ftp-hero-content\">\n    <div class=\"ftp-hero-details\">      \n      <h1> Never leave your pet hungry.<\/h1>\n      <p> Discover innovative feeding solutions for your beloved companion and transform feeding moments. <\/p>\n    <\/div>\n    <div class=\"ftp-hero-actions\">\n      <div class=\"banner__buttons\"> \n        <a class=\"button button-primary\" href=\"\/collections\/all\">See what we offer<\/a> \n      <\/div>\n    <\/div>\n  <\/div>\n  <div class=\"ftp-hero-banner\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0835\/0584\/0404\/files\/cat-and-dog-1-colored.png?v=1696014535\" \/>\n  <\/div>\n<\/div>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_with_text_hero_section": {
       "type": "image-with-text-hero",
       "blocks": {
@@ -92,7 +80,6 @@
     }
   },
   "order": [
-    "02467c08-19b5-4ef2-98e5-612963ead7c4",
     "image_with_text_hero_section",
     "featured_collection"
   ]
