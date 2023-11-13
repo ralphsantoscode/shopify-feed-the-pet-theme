@@ -96,19 +96,16 @@
         "padding_bottom": 52
       }
     },
-    "eb8ff763-da6b-488b-9cda-16f508169285": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".grid {display: grid; grid-template-columns: 1fr 1fr; \/* 2 columns by default *\/}",
-        ".grid-item {text-align: center; padding: 20px;}",
-        ".grid-item img {width: 5em; height: 5em;}",
-        "@media all and (min-width: 768px) {.grid {grid-template-columns: 1fr 1fr 1fr; }}"
-      ],
+    "multicolumn-for-product-features": {
+      "type": "multicolumn-for-product-features",
       "settings": {
-        "custom_liquid": "<div class=\"grid\">\n\n{%- for feature in product.metafields.custom.features.value -%}\n<div class=\"grid-item\">\n            <img src=\"{{ feature.icon }}\" alt=\"Home\">\n  <p>{{ feature.text }}<\/p>\n        <\/div>\n{%- endfor -%}\n<\/div>\n\n<\/div>",
+        "title": "",
+        "image_width": "third",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
         "color_scheme": "background-2",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "2"
       }
     },
     "660cfc42-5696-439c-bc25-2158a6f29575": {
@@ -133,7 +130,7 @@
     "main",
     "related-products",
     "54364a71-c0d3-443a-b7b3-93de6d60f02a",
-    "eb8ff763-da6b-488b-9cda-16f508169285",
+    "multicolumn-for-product-features",
     "660cfc42-5696-439c-bc25-2158a6f29575"
   ]
 }
