@@ -173,7 +173,7 @@
                 {%- endif -%}
               </p>
             {%- when 'description' -%}
-              {%- if product.description != blank -%}
+              {%- if product.description != blank and block.settings.description_placement == 'side' -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
@@ -553,6 +553,15 @@
         </a>
       </product-info>
     </div>
+    {%- if product.description != blank  -%}
+      {%- assign description_block = section.blocks | where: 'type', 'description' | first -%}
+      {%- if description_block != blank and description_block.settings.description_placement == 'bottom' -%}
+        <div class="element-margin">
+          {{ product.description }}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
     {%- if section.settings.media_position == 'right' -%}
       {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
       <div class="grid__item product__media-wrapper small-hide">
@@ -855,7 +864,25 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "description_placement",
+          "label": "Placement",
+          "options": [
+            {
+              "value": "side",
+              "label": "Default"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom of the product info"
+            }
+          ],
+          "default": "side"
+        }
+      ]
     },
     {
       "type": "share",
