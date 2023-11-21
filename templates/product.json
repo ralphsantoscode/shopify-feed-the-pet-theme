@@ -111,7 +111,8 @@
       "settings": {
         "image_height": "medium",
         "heading_size": "h2",
-        "section_color_scheme": "background-2"
+        "section_color_scheme": "background-2",
+        "row_color_scheme": "accent-1"
       }
     }
   },
