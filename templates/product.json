@@ -114,12 +114,21 @@
         "section_color_scheme": "background-2",
         "row_color_scheme": "accent-1"
       }
+    },
+    "product-specs-list": {
+      "type": "product-specs-list",
+      "settings": {
+        "heading_size": "h2",
+        "section_color_scheme": "background-2",
+        "list_item_color_scheme": "accent-1"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "multicolumn-for-product-features",
-    "multirow-for-product-selling-points"
+    "multirow-for-product-selling-points",
+    "product-specs-list"
   ]
 }

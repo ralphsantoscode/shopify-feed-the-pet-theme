@@ -3746,6 +3746,47 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "product_specs_list": {
+      "name": "Products specifications",
+      "settings": {
+        "title": {
+          "label": "Heading"
+        },
+        "desktop_content_alignment": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Desktop content alignment"
+        },
+        "header_mobile": {
+          "content": "Mobile Layout"
+        },
+        "mobile_content_alignment": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Mobile content alignment"
+        },
+        "list_item_color_scheme": {
+          "label": "List item color scheme"
+        }
+      },
+      "presets": {
+        "name": "Product specifications"
+      }
     }
   }
 }
