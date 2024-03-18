@@ -1,0 +1,45 @@
+@media screen and (max-width: 749px) {
+    .product-specs-list__content {
+        flex-grow: 1;
+    }
+}
+
+.product-specs-list__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-self: center;
+    padding: 4rem calc(4rem / var(--font-body-scale)) 4rem;
+    position: relative;
+    z-index: 1;
+    border-radius: var(--text-boxes-radius);
+}
+
+.product-specs-list__content--mobile-right>* {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.product-specs-list__content--mobile-center>* {
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+    .product-specs-list__content--desktop-right>* {
+        align-self: flex-end;
+        text-align: right;
+    }
+
+    .product-specs-list__content--desktop-left>* {
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .product-specs-list__content--desktop-center>* {
+        align-self: center;
+        text-align: center;
+    }
+}
