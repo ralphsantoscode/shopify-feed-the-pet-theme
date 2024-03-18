@@ -2046,6 +2046,9 @@
         }
       }
     },
+    "main-brands-list-page": {
+      "name": "All brands"
+    },
     "main-cart-footer": {
       "name": "Subtotal",
       "blocks": {
